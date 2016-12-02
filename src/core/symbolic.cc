@@ -61,7 +61,7 @@ inline void KeywordArgumentMismatch(const char *source,
                                     const std::vector<std::string>& user_args,
                                     const array_view<std::string>& args) {
   std::unordered_set<std::string> keys(args.begin(), args.end());
-  std::ostringstream head, msg;
+  std::ostringstream msg;
   msg << "\nCandidate arguments:\n";
   for (size_t i = 0; i < args.size(); ++i) {
     msg << "\t[" << i << ']' << args[i] << '\n';
