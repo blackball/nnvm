@@ -192,7 +192,7 @@ class IndexedGraph {
   // mapping from node to index.
   std::unordered_map<const nnvm::Node*, uint32_t> node2index_;
   // CSR pointer of node entries
-  std::vector<size_t> entry_rptr_;
+  std::vector<uint32_t> entry_rptr_;
   // space to store input entries of each
   std::vector<NodeEntry> input_entries_;
   // control flow dependencies
